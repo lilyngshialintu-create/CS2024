@@ -1,0 +1,79 @@
+header,
+header.scrolled {
+  background-color: #F4EEE0;                  /* navbar beige background */
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.main-nav ul.nav {
+  gap: 30px;                                   /* spacing between nav links */
+}
+
+header .nav-link,
+.main-nav .nav-link {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+}
+
+header .nav-link.active,
+.main-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+header .nav-link:hover,
+.main-nav .nav-link:hover {
+  color: #5c3d2e;
+}
+
+.about-hero {
+  background-color: #F4EFE1;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;                            
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero section decorative doodles */
+.hero-doodle-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-doodle-right {
+  position: absolute;
+  bottom: -80px;
+  right: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+body{
+    font-family: "Quattrocento Sans", sans-serif;
+    padding-top: 66px;
+    background-color: #F4EEE0;
+}
+
+/* Blog list card date line */
+.blog-list p.text-uppercase.small {
+  color: rgb(102, 102, 102) !important;
+}
+
+
+

@@ -1,0 +1,348 @@
+header .nav-link.active,
+.main-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;            /* full viewport height */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* cover entire hero area */
+  display: block;
+  transform: scale(1);
+  animation: zoomIn 16s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1); }     
+  to   { transform: scale(1.2); }   /* zoom in slowly */
+}
+
+/* Sticky header over hero */
+header {
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+header.scrolled {
+  background-color: #1a1a1a;   /* solid black on scroll */
+}
+
+/* Overlay text right-aligned */
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  right: 5%;              /* push towards right side */
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.overlay-text h1 {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Button styling */
+.overlay-text .btn {
+  background-color: #074633 !important;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+}
+.overlay-text .btn:hover {
+  background-color: #063626 !important;
+}
+
+/*text animation*/
+.hero-title .line {
+  display: block;
+  overflow: hidden;
+}
+
+.hero-title .text , .hero-btn.text{
+  display: inline-block;
+  clip-path: inset(100% 0 0 0);   /* fully hidden (top to bottom) */
+  animation: textReveal 1.5s ease forwards;
+}
+
+.hero-title .line:nth-child(1) .text {
+  animation-delay: 0.2s;
+}
+.hero-title .line:nth-child(2) .text {
+  animation-delay: 0.8s;
+}
+
+/* Animate hero button reveal */
+.hero-btn {
+  display: inline-block;
+  clip-path: inset(100% 0 0 0);   /* hidden at start */
+  animation: textReveal 1.2s ease forwards;
+  animation-delay: 1.5s;          /* comes after the lines */
+}
+
+
+@keyframes textReveal {
+  to {
+    clip-path: inset(0 0 0 0);  
+  }
+}
+
+
+
+/* Custom big title + subtitle */
+.custom-title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.custom-subtext {
+  font-size: 1.25rem;
+  color: #666666;
+}
+
+/* Coffee icon background inside hero */
+.coffee-icon-bg {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 320px;
+  height: auto;
+  z-index: 0;   /* behind text */
+}
+
+/* ensure positioning context */
+section.container {
+  position: relative;
+}
+
+
+/* ===========================
+   PROMO PHOTOS
+   =========================== */
+
+.promo-card {
+  position: relative;
+  max-width: 850px;   /* keep similar width as your design */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Image fills card */
+.promo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content overlay */
+.promo-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+  max-width: 50%;        /* keeps text on the left side only */
+  display: flex;
+  flex-direction: column; /* stack text + button */
+  justify-content: center;
+  align-items: flex-start; /* align items left */
+  color: #fff;
+  text-align: left;
+}
+
+.promo-content h2 {
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.2;
+}
+
+.promo-content p {
+  font-size: 1rem;
+}
+
+.promo-content .btn {
+  flex: 0 0 auto;         
+  width: auto;            
+  display: inline-block;  /* ensure width hugs text */
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .promo-content {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+
+/* ===========================
+   GENERAL UTILITIES
+   =========================== */
+.beigecolor .card .card-body { text-align: left; }
+.text-brown { color: #925C2C; }
+
+
+
+
+/* ===========================
+   BOOK HOVER EFFECT
+   =========================== */
+.book-container {
+  position: relative;
+  overflow: hidden;
+}
+.book-description {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(7, 70, 51, 0.9);
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+.book-container:hover .book-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ===========================
+   MEET THE AUTHOR
+   =========================== */
+.book-poster {
+  width: 240px;
+  max-width: 100%;
+}
+.side-image {
+  width: 240px;
+  max-width: 100%;
+}
+
+.decor-coffee {
+  position: absolute;
+  right:20px;
+  width: 200px;
+  bottom:20px;
+}
+.decor-cafe {
+  position: absolute;
+  bottom:-175px;
+  left: 0;
+  width: 240px;
+}
+
+
+
+
+@media (max-width: 767.98px) {
+  .col-lg-6.d-flex { flex-direction: column; align-items: center; }
+  .book-poster,
+  .side-image { width: 100%; max-width: 300px; }
+}
+
+
+/* ===========================
+   EVENT DETAILS
+   =========================== */
+.event-details {
+  margin-left: 80px;
+}
+
+
+/* ===========================
+   REVIEWS SECTION
+   =========================== */
+.star { color: #F3B519; }
+
+.card.review-card {
+  background-color: #FAF7F0 !important;
+  max-width: 300px;
+  margin: auto;
+}
+
+
+#reviewsCarousel .row > [class*="col-"] {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.reviews-container {
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+.reviews-container .review-card {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+
+/* ===========================
+   CONTACT US SECTION
+   =========================== */
+.contact-section {
+  background: #FAF7F0;
+}
+
+.tracking-wide { letter-spacing: 0.08em; }
+
+.contact-list .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1rem;
+  color: #666666;
+}
+.contact-list .contact-item img { margin-top: 0; }
+.contact-list img { margin-top: 4px; }
+
+/* spacing inside columns */
+.contact-section .col-lg-6 .row {
+  margin-top: 2rem;
+}
+
+
+
+/* Center vertical divider */
+.contact-section .contact-divider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(7,70,51,0.25) 20%,
+    rgba(7,70,51,0.25) 80%,
+    rgba(0,0,0,0) 100%);
+  opacity: .5;
+  transform: translateX(-0.5px);
+}
+/* hide divider on small screens */
+@media (max-width: 991.98px) {
+  .contact-section .contact-divider { display: none; }
+}
+
+.video{
+padding-top: 45px;
+padding-bottom: 30px
+}

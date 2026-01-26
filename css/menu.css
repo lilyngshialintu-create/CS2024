@@ -1,0 +1,306 @@
+/* ---------- General page defaults ---------- */
+.about-body {
+  padding-top: 66px;                       /* offset for fixed header */
+  font-family: 'Quattrocento Sans', sans-serif;
+  background: #FAF7F0;                      /* beige background */
+  
+}
+/* ---------- Navigation bar tweaks ---------- */
+header,
+header.scrolled {
+  background-color: #F4EEE0;                  /* navbar beige background */
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.main-nav ul.nav {
+  gap: 30px;                                   /* spacing between nav links */
+}
+
+header .nav-link,
+.main-nav .nav-link {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+}
+
+header .nav-link.active,
+.main-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+header .nav-link:hover,
+.main-nav .nav-link:hover {
+  color: #5c3d2e;
+}
+/* Hero section decorative doodles */
+.hero-doodle-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-doodle-right {
+  position: absolute;
+  bottom: -80px;
+  right: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+/* ---------- Hero section ---------- */
+.about-hero {
+  background-color: #F4EFE1;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;                            /* remove unwanted gap under header */
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section background helper (darker beige stripe) */
+.beigecolor { 
+  background-color: #F4EFE1 !important;
+}
+/* Page hero */
+.menu-hero {
+  background-color: #F4EFE1;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-hero-line {
+  width: 80px;
+  height: 1px;
+  background: rgba(0,0,0,.2);
+  margin: 12px 0 0 0;
+}
+
+/* Section headings with increased spacing */
+.menu-section-heading {
+  margin-bottom: 3rem !important;
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem !important;
+  line-height: 1.3 !important;
+}
+
+.menu-section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: calc(100% + 52px);
+  height: 3px;
+  background: linear-gradient(to bottom, 
+    rgba(0,0,0,.4) 0px, 
+    rgba(0,0,0,.4) 1.5px, 
+    transparent 1.5px, 
+    transparent 2px, 
+    rgba(0,0,0,.4) 2px, 
+    rgba(0,0,0,.4) 3px);
+  background-size: 100% 3px;
+  z-index: 2;
+}
+
+/* Specials */
+.menu-specials {
+  background: #FAF7F0;
+  padding: 3rem 0;
+}
+.menu-specials .row {
+  align-items: start;
+}
+.menu-specials .col-lg-6:last-child {
+  display: flex;
+  align-items: start;
+}
+.menu-specials .menu-list {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+.menu-specials .menu-list li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: start;
+  gap: 12px;
+  padding: 1rem 0;
+  border-bottom: 1px dashed rgba(0,0,0,.08);
+}
+.menu-specials .menu-list .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.menu-specials .menu-list .name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.menu-specials .menu-list .tags {
+  display: flex;
+  align-items: center;
+}
+.menu-specials .menu-list .tags img {
+  width: 14px; 
+  height: 14px; 
+  object-fit: contain;
+  opacity: .9;
+  vertical-align: middle;
+}
+.menu-specials .menu-list .price {
+  min-width: 40px;
+  text-align: right;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.menu-specials .menu-list .item-description {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 0.25rem;
+  margin-left: 0;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  grid-column: 1 / -1;
+}
+
+.legend span {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-right: 16px; color: #666666; font-size: .95rem;
+}
+.legend img { width: 16px; height: 16px; object-fit: contain; }
+
+/* Right-side 2x2 images */
+.specials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 60px;
+  height: 100%;
+  min-height: 600px;
+}
+.specials-grid img {
+  width: 100%; 
+  height: 280px; 
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Banner image before general menu */
+.menu-banner { padding: 40px 0; }
+.menu-banner img { border-radius: 14px; }
+
+/* Menu blocks */
+.menu-cards .menu-block + .menu-block { margin-top: 40px; }
+.menu-cards .menu-block h3 { letter-spacing: .2px; }
+
+/* Ensure all price elements use Cormorant Garamond */
+.price {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 600;
+}
+
+/* Darker background for sectioning */
+.darker-bg {
+  background: #F4EEE0;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+/* Add padding to sections without darker background for alignment */
+.menu-block:not(.darker-bg) {
+  padding: 2rem 3rem;
+}
+
+/* Column headers for hot/cold */
+.menu-headers {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #666666;
+  text-transform: lowercase;
+}
+
+.header-hot, .header-cold {
+  text-align: right;
+  min-width: 40px;
+}
+
+/* Reusable dotted menu list (leaders) */
+.menu-cards .menu-list {
+  list-style: none; padding: 0; margin: 0;
+}
+.menu-cards .menu-list li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: start;
+  gap: 12px;
+  padding: 1rem 0;
+  border-bottom: 1px dotted rgba(0,0,0,.08);
+}
+.menu-cards .menu-list .item {
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
+}
+.menu-cards .menu-list .name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.menu-cards .menu-list .tags img {
+  width: 14px; 
+  height: 14px; 
+  object-fit: contain; 
+  opacity: .9;
+  vertical-align: middle;
+}
+.menu-cards .menu-list .price,
+.menu-cards .menu-list .price-hot,
+.menu-cards .menu-list .price-cold {
+  min-width: 40px; 
+  text-align: right;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.menu-cards .menu-list .item-description {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 0.25rem;
+  margin-left: 0;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  grid-column: 1 / -1;
+}

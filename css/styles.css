@@ -1,0 +1,160 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400; /* default weight */
+  background: #FAF7F0;
+  color: rgb(33, 37, 41) !important;
+}
+
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.beigecolor{
+  background-color: #F4EFE1;
+}
+.gray_color{
+  color: rgb(102,102,102);
+}
+
+/* Buttons */
+.btn-green {
+  background-color: #074633 !important;
+  border-color: #074633 !important;
+  color: #fff !important;
+}
+.btn-green:hover {
+  background-color: #063626 !important;
+  border-color: #063626 !important;
+}
+
+/*scrolling effect*/
+
+/* Seamless marquee */
+.marquee-strip { background: #FAF7F0; }  
+
+.marquee {
+  --gap: 1.2rem;      /* space between phrases */
+  --speed: 160s;       /* lower = faster */
+  display: flex;      /* lays the two tracks side-by-side */
+  overflow: hidden;
+  width: 100%;
+  line-height: 1;
+}
+
+.marquee__content {
+  flex: 0 0 auto;                 /* don’t shrink */
+  display: inline-flex;           /* keep items on one line */
+  gap: var(--gap);
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-slide var(--speed) linear infinite;
+}
+
+.marquee__content span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(250px, 4vw, 400px);
+  font-weight: 500;
+  color: #8B3A2D;
+}
+
+.marquee:hover .marquee__content { animation-play-state: paused; }
+
+@keyframes marquee-slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__content { animation: none; }
+}
+
+/* Newsletter form styles */
+.newsletter-form {
+  max-width: 550px;
+}
+
+
+.newsletter-form .form-control {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  padding-inline: 1.25rem;
+  color: rgb(102, 102, 102);
+}
+.newsletter-form .btn {
+  border: none;
+}
+
+
+/* ===========================
+   INSTAGRAM STRIP
+   =========================== */
+.instagram-strip {
+  width: 100%;
+  overflow: hidden;
+}
+.instagram-strip .d-flex {
+  display: flex;
+  width: 100%;
+}
+.instagram-strip .insta-img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.insta-overlay {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.insta-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* ===========================
+   FOOTER
+   =========================== */
+.site-footer {
+  background: #1a1a1a;
+  color: #fff;
+}
+.footer-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,.08), rgba(255,255,255,.08));
+}
+.social-icons .icon-btn {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.social-icons .icon-btn:hover {
+  background: #fff;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latte & Literature — Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css?v=5" />
+    <link rel="stylesheet" href="css/index.css?v=11" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="p-2 text-white fixed-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-white text-decoration-none "
+          >
+            <img src="images/logo.png" alt="L&N Collections" width="180" height="70" />
+          </a>
+
+          <!-- Nav + Icons -->
+          <div class="d-flex align-items-center ms-auto">
+            <ul class="nav ms-auto me-4 mb-2 mb-md-0 text-uppercase">
+              <li><a href="index.html" class="nav-link px-3 text-white active">Home</a></li>
+              <li><a href="menu.html" class="nav-link px-3 text-white">Menu</a></li>
+              <li><a href="blog.html" class="nav-link px-3 text-white">Blog</a></li>
+              <li><a href="about.html" class="nav-link px-3 text-white">About Us</a></li>
+              <li><a href="#" class="nav-link px-3 text-white">Contact Us</a></li>
+            </ul>
+
+            <div class="d-flex gap-4 ms-auto ">
+              
+
+
+              <!-- Search Dropdown -->
+<div class="dropdown">
+  <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="images/search.svg" alt="Search" width="24" height="24" />
+  </a>
+  <div class="dropdown-menu dropdown-menu-end p-2" style="min-width: 250px;">
+    <input type="text" class="form-control" placeholder="Type to search..." />
+  </div>
+</div>
+
+              <a href="about.html#faq"><img src="images/faq_icon.svg" alt="FAQ" width="24" height="24" /></a>
+
+              <a href="#"><img src="images/menu.svg" alt="Menu" width="24" height="24" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+  <img src="images/herobanner.png?v=3" alt="Hero Image" />
+  <div class="hero-overlay"></div>
+
+  <div class="overlay-text text-white text-end">
+    <h1 class="hero-title font-cormorant">
+  <span class="line"><span class="text">Not just Latte —</span></span>
+  <span class="line"><span class="text">Your Next Chapter</span></span>
+</h1>
+
+<span class="line">
+  <span class="text">
+    <a href="#reservation" class="btn btn-green rounded-pill font-cormorant hero-btn mt-3">
+      Save me a seat!
+    </a>
+  </span>
+</span>
+
+  </div>
+</section>
+
+<section class="marquee-strip py-2 mt-2">
+      <div class="marquee" aria-label="Scrolling text">
+        <div class="marquee__content">
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee__content" aria-hidden="true">
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+          <span>✦Latte & Literature</span>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    
+<!-- Student Promo Section -->
+<section class="promo-student py-5">
+  <div class="container">
+    <div class="promo-card mx-auto">
+      <img src="images/cobook.png" alt="Student Promotion" class="promo-img" />
+      <div class="promo-content text-white">
+        <h2 class="font-cormorant fw-bold mb-3">Our New Student<br/>Promotion!</h2>
+        <p class="mb-3">
+          Enjoy coffee + snack + 3–4 hours of<br/>
+          cozy seating for one flat fee
+        </p>
+        <p class="small mb-4 opacity-75">*Wifi and power chords given</p>
+        <a href="#" class="btn btn-green btn-lg font-cormorant rounded-pill">More Offers Here</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Harry Potter Section -->
+    <section class="beigecolor py-5">
+      <div class="container text-center">
+        <p class="gray_color text-uppercase">October theme</p>
+        <h2 class="mb-4 font-cormorant display-5 fw-bold">Harry Potter</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="card h-100 border-0 beigecolor">
+              <div class="book-container">
+                <img src="images/halfblood.png" class="card-img-top" alt="Half Blood Prince" />
+                <div class="book-description">
+                  <p>
+                    In his sixth year, Harry uncovers Voldemort’s dark past and a prince’s dangerous
+                    secrets.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body px-0 py-2 text-start">
+                <h6 class="card-title mb-2 mt-3 font-cormorant fs-5 fw-bold">
+                  Harry Potter And The Half-Blood Prince
+                </h6>
+                <p class="fs-6 mb-0 text-brown">J.K. Rowling</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 beigecolor">
+              <div class="book-container">
+                <img
+                  src="images/sorcerer.png"
+                  class="card-img-top"
+                  alt="Harry Potter and the Sorcerer’s Stone"
+                />
+                <div class="book-description">
+                  <p>
+                    A boy enters the enchanted world of Hogwarts, and uncovers a dangerous secret
+                    that could change everything.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body px-0 py-2 text-start">
+                <h6 class="card-title mb-2 mt-3 font-cormorant fs-5 fw-bold">
+                  Harry Potter And The Sorcerer’s Stone
+                </h6>
+                <p class="fs-6 mb-0 text-brown">J.K. Rowling</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 beigecolor">
+              <div class="book-container">
+                <img
+                  src="images/azabakan.png"
+                  class="card-img-top"
+                  alt="Harry Potter and the Prisoner of Azkaban"
+                />
+                <div class="book-description">
+                  <p>
+                    A fugitive from Azkaban closes in, forcing Harry to confront dark family secrets
+                    and deadly truths.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body px-0 py-2 text-start">
+                <h6 class="card-title mb-2 mt-3 font-cormorant fs-5 fw-bold">
+                  Harry Potter And The Prisoner Of Azkaban
+                </h6>
+                <p class="fs-6 mb-0 text-brown">J.K. Rowling</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 beigecolor">
+              <div class="book-container">
+                <img
+                  src="images/fire.png"
+                  class="card-img-top"
+                  alt="Harry Potter and the Goblet of Fire"
+                />
+                <div class="book-description">
+                  <p>
+                    Thrown into a deadly tournament, Harry confronts dragons, danger—and the return
+                    of Voldemort.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body px-0 py-2 text-start">
+                <h6 class="card-title mb-2 mt-3 font-cormorant fs-5 fw-bold">
+                  Harry Potter And The Goblet Of Fire
+                </h6>
+                <p class="fs-6 mb-0 text-brown">J.K. Rowling</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 beigecolor">
+              <div class="book-container">
+                <img
+                  src="images/hallows.png"
+                  class="card-img-top"
+                  alt="Harry Potter and the Deathly Hallows"
+                />
+                <div class="book-description">
+                  <p>
+                    On a perilous quest to destroy Horcruxes, Harry faces the final battle for
+                    Hogwarts.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body px-0 py-2 text-start">
+                <h6 class="card-title mb-2 mt-3 font-cormorant fs-5 fw-bold">
+                  Harry Potter And The Deathly Hallows
+                </h6>
+                <p class="fs-6 mb-0 text-brown">J.K. Rowling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <a href="#" class="btn btn-green btn-lg font-cormorant rounded-pill">Discover Your Next Read</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Left column: book cover + summary + author -->
+          <div class="col-lg-6 d-flex align-items-center">
+            <!-- Book cover -->
+            <div class="me-5">
+              <img
+                src="images/original_daughter.png"
+                alt="The Original Daughter"
+                class="img-fluid shadow rounded book-poster"
+              />
+            </div>
+
+            <!-- Summary + Author stacked -->
+            <div class="d-flex flex-column justify-content-between">
+              <img
+                src="images/summary.png"
+                alt="Book Summary"
+                class="img-fluid shadow rounded side-image mb-5"
+              />
+              <img
+                src="images/author.png"
+                alt="Jemimah Wei"
+                class="img-fluid shadow rounded side-image"
+              />
+            </div>
+          </div>
+
+          <!-- Right column: event details -->
+          <div class="col-lg-5 event-details">
+            <p class="gray_color text-uppercase">4 October, Saturday</p>
+            <h2 class="font-cormorant display-5 fw-bold">Meet-the-Author</h2>
+            <p class="my-3 fw-semibold">✨ Join Us for an Inspiring Evening with Our Author! ✨</p>
+            <p>
+              Hear her share her writing journey, inspirations, and upcoming projects— and bring
+              your questions for the live Q&amp;A.
+            </p>
+            <p>Don’t miss your chance to connect with the author!</p>
+          </div>
+        </div>
+         
+      </div>
+
+      <section class="decor-icons-section mb-4 position-relative">
+        <img src="images/coffee2.svg" alt="Coffee Icon" class="decor-coffee" />
+ <img src="images/cafe.svg" alt="Cafe Icon" class="decor-cafe" />
+  
+  
+</section>
+      
+    </section>
+
+    <section>
+    <div class="video container my-5">
+      <div class="ratio ratio-16x9">
+        <video controls>
+          <source src="video/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    </section>
+
+    <section class="py-5 beigecolor">
+      <div class="container-fluid px-5 reviews-container">
+        <h2 class="text-center font-cormorant mb-4 display-5 fw-bold">Your Reviews</h2>
+
+        <div
+          id="reviewsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="7000"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators position-static my-3">
+            <button
+              type="button"
+              data-bs-target="#reviewsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      A cosy hideaway with an unbeatable book selection. The staff knew exactly
+                      what I’d like and recommended a novel that kept me glued to my seat—paired
+                      perfectly with their rich, velvety latte. Quiet corners, warm lighting, and
+                      soft playlists made it my perfect afternoon escape.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      Fantastic spot for study sessions and weekend browsing. The Wi-Fi is reliable
+                      and the tables are roomy enough for notes and laptops. Would love more vegan
+                      snack options, but otherwise a five-star vibe for book lovers.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      This café is a gem — shelves full of surprising finds, comfy armchairs, and
+                      coffee that warms you to the core. I always leave inspired (and with a new
+                      book). Friendly service, lovely events, and a true sense of community make it
+                      my go-to place.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      Lovely atmosphere and thoughtfully curated titles. The pastries were fresh and
+                      the espresso was smooth, though seating filled up quickly on weekends. Great
+                      place for casual meetups or to bury yourself in a good book for hours
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      Charming, welcoming, and genuinely bookish. I attended a short author talk
+                      here and loved how intimate it felt—felt like being in a friend’s living room.
+                      The staff’s passion for literature shows in every detail, from the rotating
+                      displays to the themed drink specials.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card review-card h-100 p-5">
+                    <div class="mb-2">
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                      <i class="bi bi-star-fill star"></i>
+                    </div>
+                    <p class="gray_color mt-3 mb-0">
+                      The warm glow of the café makes it instantly inviting, while the friendly
+                      baristas create a welcoming atmosphere. With shelves full of thoughtfully
+                      chosen books, it’s a place where I can relax, explore, and always leave
+                      feeling inspired—truly my new go-to spot.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left column: heading + CTA + newsletter -->
+          <div class="col-lg-6">
+            <p class="text-uppercase mb-2 gray_color">Contact Us</p>
+            <h2 class="font-cormorant display-5 fw-bold mb-3">
+              Ask away—let’s<br />talk books!
+            </h2>
+
+            <p class="mb-4" style="max-width: 540px;">
+              Don’t be a stranger! Have a question about our menu, our book collection, or
+              upcoming author events? We’re just a message away. Reach out today and let’s make your
+              next visit even more special.
+            </p>
+
+            <a href="#contact-form" class="btn btn-green btn-lg font-cormorant rounded-pill">
+              Reach Out Now!
+            </a>
+          </div>
+
+          <!-- Right column: contact info + map -->
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <!-- Left side: contact info -->
+              <div class="col-md-6 pt-5">
+                <ul class="list-unstyled d-flex flex-column gap-3 contact-list">
+                  <li class="contact-item">
+                    <img src="images/location.svg" width="26" height="26" alt="Location" />
+                    <div>50 Nanyang Ave,<br />Singapore 639798</div>
+                  </li>
+                  <li class="contact-item">
+                    <img src="images/phone.svg" width="26" height="26" alt="Phone" />
+                    <div>+65 12345678</div>
+                  </li>
+                  <li class="contact-item">
+                    <img src="images/time.svg" width="26" height="26" alt="Opening hours" />
+                    <div>Mon–Fri: 9AM – 6PM<br />Sat–Sun: 9AM – 11PM</div>
+                  </li>
+                  <li class="contact-item">
+                    <img src="images/mail.svg" width="26" height="26" alt="Email" />
+                    <div>latte_literature@gmail.com</div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right side: map -->
+              <div class="col-md-6">
+                <div class="ratio ratio-1x1">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.742419373899!2d103.6803837749655!3d1.3483962613176695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da13fb8a3e7b3d%3A0xa5f2db2ff75689d!2s50%20Nanyang%20Ave%2C%20Singapore%20639798!5e0!3m2!1sen!2ssg!4v1738555555555"
+                    style="border:0; width:100%; height:100%;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+          </form>
+        </div>
+
+        <!-- Newsletter: text + form aligned horizontally -->
+        <div class="d-flex align-items-start gap-3 mt-5">
+          <!-- Icon + text -->
+          <div class="d-flex align-items-center gap-2">
+            <img src="images/email.svg" width="55" height="55" alt="Email icon" />
+            <span class="fw-semibold  text-uppercase">Sign up for newsletter</span>
+          </div>
+
+          <!-- Form -->
+          <form id="contact-form" class="newsletter-form flex-grow-1 ms-auto" onsubmit="return false">
+            <div class="input-group input-group-lg">
+              <input
+                type="email"
+                class="form-control rounded-start-pill"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+              />
+              <button class="btn btn-green rounded-end-pill font-cormorant px-4" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Nav bar colour-->
+     <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const hero = document.querySelector(".hero");
+        const heroBottom = hero.offsetHeight;
+
+        if (window.scrollY > heroBottom - 80) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector(".hero-btn");
+  setTimeout(() => btn.classList.add("reveal"), 1200);
+});
+</script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <footer>
+    <!-- Instagram Section -->
+    <section class="instagram-strip position-relative">
+      <div class="d-flex">
+        <img src="images/pic1.png" class="insta-img" alt="Pic 1" />
+        <img src="images/pic2.png" class="insta-img" alt="Pic 2" />
+        <img src="images/pic3.png" class="insta-img" alt="Pic 3" />
+        <img src="images/pic4.png" class="insta-img" alt="Pic 4" />
+        <img src="images/pic5.png" class="insta-img" alt="Pic 5" />
+        <img src="images/pic6.png" class="insta-img" alt="Pic 6" />
+      </div>
+
+      <!-- Center Instagram Icon (clickable) -->
+      <div class="insta-overlay">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="images/insta.png" alt="Instagram" class="insta-icon" />
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="site-footer text-white py-5 mt-0">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <!-- Working Hours -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6 class="footer-title mb-3">Working Hours</h6>
+            <ul class="list-unstyled m-0 text-white">
+              <li class="mb-2">Mon–Fri: 9AM – 6PM</li>
+              <li>Sat–Sun: 9AM – 11PM</li>
+            </ul>
+          </div>
+
+          <!-- Office -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6 class="footer-title mb-3">Office</h6>
+            <address class="text-white mb-3">
+              50 Nanyang Ave,<br />Singapore 639798
+            </address>
+            <p class="mb-2">
+              <a class="footer-link" href="mailto:latte_literature@gmail.com"
+                >latte_literature@gmail.com</a
+              >
+            </p>
+            <p class="mb-0 text-white">+65 12345678</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6 class="footer-title mb-3">Links</h6>
+            <ul class="list-unstyled m-0">
+              <li class="mb-2"><a class="footer-link" href="index.html">Home</a></li>
+              <li class="mb-2"><a class="footer-link" href="about.html">About Us</a></li>
+              <li class="mb-2"><a class="footer-link" href="menu.html">Menu</a></li>
+              <li class="mb-2"><a class="footer-link" href="#">Contact Us</a></li>
+              <li><a class="footer-link" href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Get in Touch -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6 class="footer-title mb-3">Get in Touch</h6>
+            <div class="social-icons d-flex gap-3">
+              <a
+                class="icon-btn"
+                aria-label="Facebook"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                class="icon-btn"
+                aria-label="X"
+                href="https://x.com/?lang=en"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                class="icon-btn"
+                aria-label="YouTube"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                class="icon-btn"
+                aria-label="Instagram"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider my-4"></div>
+
+        <!-- Bottom line -->
+        <div class="small text-secondary">Latte&ampLiterature © 2025 All Rights Reserved</div>
+      </div>
+    </section>
+  </footer>
+</html>

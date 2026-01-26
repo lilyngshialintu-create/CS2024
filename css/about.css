@@ -1,0 +1,568 @@
+/* ---------- General page defaults ---------- */
+.about-body {
+  padding-top: 66px;                       /* offset for fixed header */
+  font-family: 'Quattrocento Sans', sans-serif;
+  background: #FAF7F0;                      /* beige background */
+  
+}
+
+/* Section background helper (darker beige stripe) */
+.beigecolor { 
+  background-color: #F4EFE1 !important;
+}
+
+/* ---------- Hero section ---------- */
+.about-hero {
+  background-color: #F4EFE1;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;                            /* remove unwanted gap under header */
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero section decorative doodles */
+.hero-doodle-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-doodle-right {
+  position: absolute;
+  bottom: -80px;
+  right: 0px;
+  width: 500px !important;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================
+   WHO WE ARE SECTION
+============================ */
+
+.who-we-are {
+  background: #FAF7F0;
+  padding: 3rem 0;
+  position: relative;
+}
+
+/* Photo positioning following index.html pattern */
+.photo_1 {
+  width: 420px;
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+.photo_2 {
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Who We Are section title - match What We Offer section size */
+.who-we-are h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px);
+  color: rgb(33, 37, 41);
+  margin-bottom: 1.5rem;
+}
+
+/* Align text with left edge of photo_2 image */
+.who-we-are .photo_2 + p {
+  margin-left: calc(50% - 250px); /* 250px = half of 500px image width */
+  margin-top: 3.5rem; /* Increased vertical spacing between image and text */
+  max-width: 500px;
+}
+
+/* Decorative muffin doodle in bottom-left */
+.decor-muffin {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  width: 120px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* ---------- Navigation bar tweaks ---------- */
+header,
+header.scrolled {
+  background-color: #F4EEE0;                  /* navbar beige background */
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.main-nav ul.nav {
+  gap: 30px;                                   /* spacing between nav links */
+}
+
+header .nav-link,
+.main-nav .nav-link {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+}
+
+header .nav-link.active,
+.main-nav .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+header .nav-link:hover,
+.main-nav .nav-link:hover {
+  color: #5c3d2e;
+}
+
+/* ============================
+   WHAT WE OFFER SECTION
+============================ */
+
+.what-we-offer {
+  background: #F4EEE0;
+  position: relative;
+}
+
+/* Decorative coffee cup doodle in What We Offer section */
+.decor-coffee {
+  position: absolute;
+  bottom: 60px;
+  left: 30%;
+  width: 220px;
+  height: auto;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Left column content */
+.content-wrapper {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.section-eyebrow {
+  color: rgb(102,102,102);
+  
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px);
+  color: rgb(33, 37, 41);
+  margin-bottom: 1.5rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 24px;
+  
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.btn-membership {
+  background-color: #8B7355;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-membership:hover {
+  background-color: #6B5B47;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
+}
+
+
+/* Right column - Cards grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.feature-card {
+  background: #FAF7F0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  aspect-ratio: 1 / 1;  /* Makes cards perfectly square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: rgba(139, 115, 85, 0.2);
+  background: #8B7355;
+}
+
+.feature-card:hover .card-title,
+.feature-card:hover .card-description {
+  color: #fff;
+}
+
+.feature-card::after {
+  content: "Find out more";
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.feature-card:hover::after {
+  opacity: 1;
+}
+
+.feature-card::after:hover {
+  color: #E8D5B7;
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: rgb(33, 37, 41);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666666;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .content-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-description {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .what-we-offer {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .feature-card {
+    padding: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: clamp(28px, 6vw, 36px);
+  }
+}
+
+/* ---------- Stats section ---------- */
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 48px);
+  color: rgb(33, 37, 41);
+}
+
+/* ---------- Instagram cards ---------- */
+.insta-card img {
+  object-fit: cover;
+  height: 280px;
+}
+
+.insta-card .card-body {
+  background: #fff;
+}
+
+/* ---------- Interior section ---------- */
+.our-interior {
+  background: #FAF7F0;              
+  position: relative;
+}
+
+.our-interior img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+  /* Move text slightly right within its column, without breaking grid */
+.our-interior .col-lg-6:nth-child(2) {
+  padding-left: 50px; 
+}
+ 
+
+.our-interior p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.our-interior .btn-green {
+  background-color: #074633;
+  color: #fff;
+  border: none;
+}
+.our-interior .btn-green:hover {
+  background-color: #063626;
+}
+
+/* Decorative cake doodle at bottom-right */
+.decor-cake {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  transform: translate(60px, 0px);
+  width: 140px;
+  opacity: 0.8;
+}
+
+/* ============================
+   TESTIMONIALS HOVER EFFECT
+============================ */
+
+/* Container & Row — prevent clipping */
+.testimonials,
+.testimonials .row {
+  overflow: visible;
+}
+
+/* Each testimonial card */
+.testi-card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+  transition: transform .35s ease, filter .35s ease, z-index .35s ease;
+  transform-origin: center center;
+  will-change: transform;
+  cursor: pointer;
+}
+
+/* Image inside testimonial */
+.testi-card img {
+  width: 100%;
+  display: block;
+  transition: transform .35s ease;
+}
+
+/* Default hover interaction: shrink others slightly */
+.testimonials:hover .testi-card {
+  transform: scale(0.95);
+  filter: grayscale(20%) opacity(.85);
+}
+
+/* Focused card on hover */
+.testi-card:hover {
+  transform: scale(1.08);
+  filter: none;
+  z-index: 6;
+}
+
+.testi-card:hover img {
+  transform: scale(1.05);
+}
+
+/* On smaller screens → disable shrinking for better UX */
+@media (max-width: 767.98px) {
+  .testimonials .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials:hover .testi-card {
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+/* Heart doodle near testimonials title */
+.heart-doodle {
+  position: absolute;
+  top: 0;                   /* aligns with top of heading */
+  left: 100%;               /* pushes it just to the right of text */
+  transform: translate(-150px, -30px);  /* nudge right & slightly up */
+  width: 250px;             /* make it larger like your sketch */
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;     /* avoid interfering with hover */
+}
+
+/* ============================
+   FAQ SECTION
+============================ */
+
+.faq-section {
+  background: #FAF7F0;
+  padding: 4rem 0;
+}
+
+.faq-illustration {
+  padding: 2rem 0;
+  text-align: left;
+  position: relative;
+}
+
+.faq-illustration img {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-list {
+  max-width: 500px;
+}
+
+.faq-item {
+  margin-bottom: 0;
+}
+
+.faq-question {
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #8B7355;
+}
+
+.faq-question span {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.faq-question i {
+  color: #8B7355;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-question:hover i {
+  transform: translateX(4px);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0;
+  opacity: 0;
+}
+
+.faq-answer p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.faq-item.active .faq-answer {
+  opacity: 1;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-divider {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #E8D5B7;
+  opacity: 0.6;
+}
+
+/* Responsive adjustments for FAQ */
+@media (max-width: 991.98px) {
+  .faq-section .row {
+    text-align: center;
+  }
+  
+  .faq-content {
+    margin-top: 2rem;
+  }
+  
+  .faq-list {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .faq-section {
+    padding: 3rem 0;
+  }
+  
+  .faq-illustration svg {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .faq-question span {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+

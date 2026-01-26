@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latte & Literature — Menu</title>
+
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  
+  <link rel="stylesheet" href="css/styles.css?v=5"/>
+  <link rel="stylesheet" href="css/menu.css?v=2"/>
+</head>
+
+<body class="about-body">
+
+  <!-- ===== Header ===== -->
+  <header class="p-2 text-white fixed-top scrolled">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <!-- Logo -->
+
+      <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+        <img src="images/logoAbout2.png" alt="Latte & Literature" width="180" height="70" />
+      </a>
+
+      <!-- Nav -->
+
+      <nav class="main-nav mx-auto">
+        <ul class="nav text-uppercase justify-content-center">
+          <li><a href="index.html" class="nav-link px-3 text-dark">Home</a></li>
+          <li><a href="menu.html" class="nav-link px-3 text-dark active">Menu</a></li>
+          <li><a href="blog.html" class="nav-link px-3 text-dark">Blog</a></li>
+          <li><a href="about.html" class="nav-link px-3 text-dark">About Us</a></li>
+          <li><a href="#" class="nav-link px-3 text-dark">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons -->
+
+      <div class="d-flex gap-4">
+        <div class="dropdown">
+          <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/blacksearch.svg" alt="Search" width="24" height="24" />
+          </a>
+          <div class="dropdown-menu dropdown-menu-end p-2" style="min-width: 250px;">
+            <input type="text" id="menuSearch" class="form-control" placeholder="Type to search..." />
+          </div>
+        </div>
+        <a href="about.html#faq"><img src="images/black_faq_icon.svg" alt="FAQ" width="24" height="24" /></a>
+        <a href="#"><img src="images/blackmenu.svg" alt="Menu"   width="24" height="24"/></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+
+  <section class="menu-hero beigecolor text-center position-relative">
+    <div class="container">
+      <h1 class="display-5 font-cormorant mb-2">Menu</h1>
+      <i class="bi bi-chevron-down fs-3 text-muted"></i>
+    </div>
+    
+    <!-- Decorative doodles -->
+
+    <img src="images/aboutUsDoodle_1.png" alt="Book Doodle Left" class="hero-doodle-left">
+    <img src="images/aboutUsDoodle_2.png" alt="Book Doodle Right" class="hero-doodle-right">
+  </section>
+
+  <!-- ===== Limited-Time Specials ===== -->
+
+  <section class="menu-specials py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+
+        <!-- Left: specials list -->
+
+        <div class="col-lg-6">
+          <h2 class="font-cormorant fw-bold h3 menu-section-heading">Limited<span style="font-family: 'Quattrocento Sans', sans-serif;">-</span>Time Specials</h2>
+
+          <ul class="menu-list">
+            <li>
+              <span class="item">
+                <span class="name">Butterbeer Latte</span>
+                <span class="tags">
+                  <img src="images/Milk Bottle.png" alt="Dairy" />
+                </span>
+              </span>
+              <span class="price">$7</span>
+              <div class="item-description">Hot, creamy caramel latte topped with frothy butterscotch foam</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Forbidden Forest Mocha</span>
+                <span class="tags">
+                  <img src="images/Milk Bottle.png" alt="Dairy" />
+                </span>
+              </span>
+              <span class="price">$7</span>
+              <div class="item-description">Rich dark chocolate mocha with earthy forest notes</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Polyjuice Potion Matcha Lemonade</span>
+                <span class="tags">
+                  <img src="images/Natural Food.png" alt="All natural" />
+                </span>
+              </span>
+              <span class="price">$5</span>
+              <div class="item-description">Refreshing green tea lemonade with a magical twist</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Cinnamon and Pumpkin Pasties</span>
+                </span>
+              </span>
+              <span class="price">$5</span>
+              <div class="item-description">Flaky pastries filled with spiced pumpkin and cinnamon</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Golden Snitch Cake Pops</span>
+                <span class="tags">
+                  <img src="images/Nut.png" alt="Contains nuts" />
+                </span>
+              </span>
+              <span class="price">$4</span>
+              <div class="item-description">Golden cake pops dipped in white chocolate</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Deathly Hallows Sugar Cookies</span>
+                <span class="tags">
+                  <img src="images/Nut.png" alt="Contains nuts" />
+                </span>
+              </span>
+              <span class="price">$4</span>
+              <div class="item-description">Delicate sugar cookies with mystical symbols</div>
+            </li>
+            <li>
+              <span class="item">
+                <span class="name">Sorting Hat Cupcakes</span>
+                <span class="tags">
+                  <img src="images/Milk Bottle.png" alt="Dairy" />
+                </span>
+              </span>
+              <span class="price">$6</span>
+              <div class="item-description">Chocolate cupcakes topped with wizard hat decorations</div>
+            </li>
+          </ul>
+
+          <!-- icon legend -->
+
+          <div class="legend mt-4">
+            <span><img src="images/Milk Bottle.png" alt="Dairy" /> Dairy</span>
+            <span><img src="images/Nut.png" alt="Nuts" /> Nuts</span>
+            <span><img src="images/Natural Food.png" alt="All natural" /> Vegan</span>
+          </div>
+        </div>
+
+        <!-- Right: 2x2 image grid -->
+
+        <div class="col-lg-6">
+          <div class="specials-grid">
+            <img src="images/menuSpecials_1.png" alt="Special 1"/>
+            <img src="images/menuSpecials_2.png" alt="Special 2"/>
+            <img src="images/menuSpecials_3.png" alt="Special 3"/>
+            <img src="images/menuSpecials_4.png" alt="Special 4"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Big display image ===== -->
+
+  <section class="menu-banner">
+    <div class="container">
+      <img src="images/menuGeneral.png" alt="Latte and Literature showcase" class="img-fluid w-100 rounded"/>
+    </div>
+  </section>
+
+  <!-- ===== Menu blocks ===== -->
+
+  <section class="menu-cards py-5">
+    <div class="container">
+
+      <!-- House Coffee -->
+
+      <div class="menu-block darker-bg">
+        <h3 class="font-cormorant fw-bold h3 menu-section-heading">House Coffee</h3>
+        
+        <ul class="menu-list">
+          <li>
+            <span class="item">
+              <span class="name">Affagato</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$8</span>
+            <div class="item-description">Espresso, chocolate sauce and house-made vanilla ice cream</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Latte</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$7 / $8</span>
+            <div class="item-description">Vanilla/Caramel/Hazelnut/Chai/Uji Matcha - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Black Coffee</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$5 / $6</span>
+            <div class="item-description">Rich, bold coffee - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">White Coffee</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$6 / $7</span>
+            <div class="item-description">Smooth coffee with milk - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Mocha</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$7 / $8</span>
+            <div class="item-description">Rich chocolate and coffee blend - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Hot Chocolate</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$6 / $7</span>
+            <div class="item-description">Creamy chocolate drink - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Espresso</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$4</span>
+            <div class="item-description">Intense, concentrated coffee shot</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Add Espresso Shot</span>
+            </span>
+            <span class="price">$1</span>
+            <div class="item-description">Extra shot of espresso for any drink</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Change to Soy/Oat Milk</span>
+            </span>
+            <span class="price">$1</span>
+            <div class="item-description">Substitute dairy milk with plant-based alternatives</div>
+          </li>
+        </ul>
+
+        <!-- icon legend -->
+
+        <div class="legend mt-4">
+          <span><img src="images/Milk Bottle.png" alt="Dairy" /> Dairy</span>
+          <span><img src="images/Nut.png" alt="Nuts" /> Nuts</span>
+          <span><img src="images/Natural Food.png" alt="All natural" /> Vegan</span>
+        </div>
+      </div>
+
+      <!-- Teas & Specialties -->
+
+      <div class="menu-block">
+        <h3 class="font-cormorant fw-bold h3 menu-section-heading">Teas and Specialties</h3>
+        
+        <ul class="menu-list">
+          <li>
+            <span class="item">
+              <span class="name">Ginger with Lemongrass</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$4 / $5</span>
+            <div class="item-description">Soothing herbal tea with warming ginger and refreshing lemongrass - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Earl Grey Crème</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$4 / $5</span>
+            <div class="item-description">Classic bergamot tea with creamy vanilla notes - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Honey Chamomile</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$4 / $5</span>
+            <div class="item-description">Calming chamomile tea sweetened with natural honey - Available hot or cold</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Iced Lemon Tea</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Refreshing black tea with fresh lemon and ice</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Mango Tango Smoothie</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Tropical mango smoothie with a tangy twist</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Strawberry Rose Cooler</span>
+              <span class="tags">
+                <img src="images/Natural Food.png" alt="All natural" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Delicate strawberry and rose infused refreshing drink</div>
+          </li>
+        </ul>
+
+        <!-- icon legend -->
+
+        <div class="legend mt-4">
+          <span><img src="images/Milk Bottle.png" alt="Dairy" /> Dairy</span>
+          <span><img src="images/Nut.png" alt="Nuts" /> Nuts</span>
+          <span><img src="images/Natural Food.png" alt="All natural" /> Vegan</span>
+        </div>
+      </div>
+
+      <!-- Bakery Classics -->
+
+      <div class="menu-block darker-bg">
+        <h3 class="font-cormorant fw-bold h3 menu-section-heading">Bakery Classics</h3>
+        
+        <ul class="menu-list">
+          <li>
+            <span class="item">
+              <span class="name">Almond Croissant</span>
+              <span class="tags">
+                <img src="images/Nut.png" alt="Contains nuts" />
+              </span>
+            </span>
+            <span class="price">$6</span>
+            <div class="item-description">Buttery, flaky croissant filled with rich almond cream</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Pain au Chocolat</span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Classic French pastry with layers of buttery dough and dark chocolate</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Cinnamon Roll</span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Soft, sweet roll swirled with cinnamon and topped with cream cheese glaze</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Madeleine, Trio</span>
+            </span>
+            <span class="price">$4</span>
+            <div class="item-description">Three delicate French shell-shaped sponge cakes</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Blueberry Muffin</span>
+            </span>
+            <span class="price">$4</span>
+            <div class="item-description">Moist muffin bursting with fresh blueberries</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Classic New York Cheesecake</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$6</span>
+            <div class="item-description">Rich, creamy cheesecake with graham cracker crust</div>
+          </li>
+        </ul>
+
+        <!-- icon legend -->
+
+        <div class="legend mt-4">
+          <span><img src="images/Milk Bottle.png" alt="Dairy" /> Dairy</span>
+          <span><img src="images/Nut.png" alt="Nuts" /> Nuts</span>
+          <span><img src="images/Natural Food.png" alt="All natural" /> Vegan</span>
+        </div>
+      </div>
+
+      
+      <div class="menu-block">
+        <h3 class="font-cormorant fw-bold h3 menu-section-heading">Soft Serve</h3>
+        
+        <ul class="menu-list">
+          <li>
+            <span class="item">
+              <span class="name">Classic Vanilla Bean</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Creamy vanilla soft serve made with real vanilla bean</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Dark Chocolate Swirl</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Rich dark chocolate soft serve with chocolate swirls</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Matcha Green Tea</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Smooth matcha green tea soft serve with authentic Japanese flavor</div>
+          </li>
+          <li>
+            <span class="item">
+              <span class="name">Sea Salt Caramel</span>
+              <span class="tags">
+                <img src="images/Milk Bottle.png" alt="Dairy" />
+              </span>
+            </span>
+            <span class="price">$5</span>
+            <div class="item-description">Sweet and salty caramel soft serve with sea salt crystals</div>
+          </li>
+        </ul>
+
+        <!-- icon legend -->
+
+        <div class="legend mt-4">
+          <span><img src="images/Milk Bottle.png" alt="Dairy" /> Dairy</span>
+          <span><img src="images/Nut.png" alt="Nuts" /> Nuts</span>
+          <span><img src="images/Natural Food.png" alt="All natural" /> Vegan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram strip -->
+
+  <section class="instagram-strip position-relative">
+    <div class="d-flex">
+      <img src="images/pic1.png" class="insta-img" alt="Pic 1" />
+      <img src="images/pic2.png" class="insta-img" alt="Pic 2" />
+      <img src="images/pic3.png" class="insta-img" alt="Pic 3" />
+      <img src="images/pic4.png" class="insta-img" alt="Pic 4" />
+      <img src="images/pic5.png" class="insta-img" alt="Pic 5" />
+      <img src="images/pic6.png" class="insta-img" alt="Pic 6" />
+    </div>
+    <div class="insta-overlay">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <img src="images/insta.png" alt="Instagram" class="insta-icon" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+
+  <section class="site-footer text-white py-5 mt-0">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Working Hours</h6>
+          <ul class="list-unstyled m-0 text-white">
+            <li class="mb-2">Mon–Fri: 9AM – 6PM</li>
+            <li>Sat–Sun: 9AM – 11PM</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Office</h6>
+          <address class="text-white mb-3">50 Nanyang Ave,<br/>Singapore 639798</address>
+          <p class="mb-2"><a class="footer-link" href="mailto:latte_literature@gmail.com">latte_literature@gmail.com</a></p>
+          <p class="mb-0 text-white">+65 12345678</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Links</h6>
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a class="footer-link" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="footer-link" href="about.html">About Us</a></li>
+            <li class="mb-2"><a class="footer-link" href="menu.html">Menu</a></li>
+            <li class="mb-2"><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Get in Touch</h6>
+          <div class="social-icons d-flex gap-3">
+            <a class="icon-btn" href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="icon-btn" href="https://x.com/?lang=en" target="_blank" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a class="icon-btn" href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a class="icon-btn" href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider my-4"></div>
+      <div class="small text-secondary">Latte&ampLiterature © 2025 All Rights Reserved</div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Menu Search Functionality -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('menuSearch');
+      const menuItems = document.querySelectorAll('.menu-list li');
+      
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        
+        menuItems.forEach(function(item) {
+          const itemName = item.querySelector('.name').textContent.toLowerCase();
+          const itemDescription = item.querySelector('.item-description').textContent.toLowerCase();
+          
+          // Check if search term matches item name or description
+
+          if (itemName.includes(searchTerm) || itemDescription.includes(searchTerm)) {
+            item.style.display = 'grid';
+            item.style.opacity = '1';
+          } else {
+            item.style.display = 'none';
+            item.style.opacity = '0.3';
+          }
+        });
+        
+        // If search is empty, show all items
+        
+        if (searchTerm === '') {
+          menuItems.forEach(function(item) {
+            item.style.display = 'grid';
+            item.style.opacity = '1';
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

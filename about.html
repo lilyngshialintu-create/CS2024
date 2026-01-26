@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latte & Literature — About Us</title>
+
+  <!-- Favicon + Fonts -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap + Icons -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Shared + Page-specific styles -->
+
+  <link rel="stylesheet" href="css/styles.css?v=6" />
+  <link rel="stylesheet" href="css/about.css?v=14" />
+</head>
+
+<body class="about-body">
+
+  <!-- Navbar (solid on this page) -->
+  
+  <header class="p-2 text-white fixed-top scrolled">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- Logo (left) -->
+    <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+      <img src="images/logoAbout2.png" alt="Latte & Literature" width="180" height="70" />
+    </a>
+
+    <!-- Navigation (center) -->
+
+    <nav class="main-nav mx-auto">
+      <ul class="nav text-uppercase justify-content-center">
+        <li><a href="index.html" class="nav-link px-3 text-dark">Home</a></li>
+        <li><a href="menu.html" class="nav-link px-3 text-dark">Menu</a></li>
+        <li><a href="blog.html" class="nav-link px-3 text-dark">Blog</a></li>
+        <li><a href="about.html" class="nav-link px-3 text-dark active">About Us</a></li>
+        <li><a href="#" class="nav-link px-3 text-dark">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Icons (right) -->
+
+    <div class="d-flex gap-4">
+      <div class="dropdown">
+  <a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="images/blacksearch.svg" alt="Search" width="24" height="24" />
+  </a>
+  <div class="dropdown-menu dropdown-menu-end p-2" style="min-width: 250px;">
+    <input type="text" class="form-control" placeholder="Type to search..." />
+  </div>
+</div>
+      <a href="about.html#faq"><img src="images/black_faq_icon.svg" alt="FAQ" width="24" height="24" /></a>
+      <a href="#"><img src="images/blackmenu.svg" alt="Menu" width="24" height="24" /></a>
+    </div>
+    
+  </div>
+</header>
+
+
+  <!-- Hero -->
+
+  <section class="about-hero beigecolor text-center position-relative">
+    <div class="container">
+      <h1 class="display-5 font-cormorant mb-2">About Us</h1>
+      <i class="bi bi-chevron-down fs-3 text-muted"></i>
+    </div>
+    
+    <!-- Decorative doodles -->
+
+    <img src="images/aboutUsDoodle_1.png" alt="Book Doodle Left" class="hero-doodle-left">
+    <img src="images/aboutUsDoodle_2.png" alt="Book Doodle Right" class="hero-doodle-right">
+  </section>
+
+  <!-- Who We Are Section -->
+
+  <section class="who-we-are py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Text + Small Image -->
+
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-uppercase mb-2 section-eyebrow">Who We Are</p>
+          <h2 class="font-cormorant fw-bold mb-4">
+            Where bookworms and<br>café lovers meet
+          </h2>
+          
+          <!-- Small image positioned like photo_1 -->
+
+          <img
+            src="images/aboutUsIntro_1.png"
+            alt="Coffee and book"
+            class="img-fluid photo_1 rounded shadow"
+          />
+        </div>
+
+        <!-- Right Column: Large Image + Text -->
+
+        <div class="col-md-6 text-center text-md-start mt-4 mt-md-0">
+          <!-- Large portrait image positioned like photo_2 -->
+
+          <img
+            src="images/aboutUsIntro_2.png"
+            alt="Reader portrait"
+            class="img-fluid rounded photo_2 shadow mb-3"
+          />
+          
+          <!-- Description text below the image -->
+
+          <p class="mb-0">
+            A cozy sanctuary for curious minds and coffee lovers—part café, part library, and fully a
+            home for slow afternoons and unhurried conversations. Settle into a nook, discover your
+            next great read, and stay a while.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Decorative muffin doodle -->
+
+    <img src="images/aboutUsDoodle_3.png" alt="Muffin Doodle" class="decor-muffin">
+  </section>
+  
+
+  <!-- Moving banner -->
+
+  <section class="marquee-strip py-2 mt-5">
+    <div class="marquee" aria-label="Scrolling text">
+      <div class="marquee__content">
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+
+      <div class="marquee__content" aria-hidden="true">
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+        <span>✦Latte & Literature</span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- What We Offer Section -->
+
+  <section class="what-we-offer py-5" style="padding: 4rem 0 !important;">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Text Content -->
+
+        <div class="col-lg-6">
+          <div class="content-wrapper">
+            <p class="section-eyebrow text-uppercase mb-2">What We Offer</p>
+            <h2 class="section-title font-cormorant fw-bold mb-4">
+              Be Part of the Latte & Literature Story
+            </h2>
+            <p class="section-description mb-4">
+              Join our Latte & Literature Membership for early access to Book Club Nights, Blind Date with a Book, and more. Get exclusive event updates and special perks — never miss a story or a cup!
+            </p>
+            <a class="btn btn-green btn-lg font-cormorant rounded-pill" href="#">
+              Membership
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Feature Cards Grid -->
+
+        <div class="col-lg-6">
+          <div class="cards-grid">
+            
+            <!-- Card 1: Book Club Night -->
+
+            <div class="feature-card">
+              <h6 class="card-title">Book Club Night</h6>
+              <p class="card-description">Dive into a new book every month with fellow readers.</p>
+            </div>
+
+            <!-- Card 2: Poetry & Prose Evening -->
+
+            <div class="feature-card">
+              <h6 class="card-title">Poetry & Prose Evening</h6>
+              <p class="card-description">Open-mic night for sharing poems, short stories, and spoken word.</p>
+            </div>
+
+            <!-- Card 3: Themed Reading Marathon -->
+
+            <div class="feature-card">
+              <h6 class="card-title">Themed Reading Marathon</h6>
+              <p class="card-description">Spend a cozy weekend reading classic picks with like-minded individuals.</p>
+            </div>
+
+            <!-- Card 4: Blind Date with a Book -->
+
+            <div class="feature-card">
+              <h6 class="card-title">Blind Date with a Book</h6>
+              <p class="card-description">Pick a mystery, wrapped book paired with a surprise drink.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Decorative coffee cup doodle -->
+
+    <img src="images/aboutUsDoodle_4.png" alt="Coffee Cup Doodle" class="decor-coffee">
+  </section>
+
+  <!-- Stats (with count-up) -->
+
+  <section class="py-5" id="stats">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-4 text-center g-4">
+
+        <div class="col">
+          <span class="stat-number" data-target="200" data-suffix="+">0</span>
+          <div class="small text-secondary">Members</div>
+        </div>
+
+        <div class="col">
+          <span class="stat-number" data-target="100" data-suffix="+">0</span>
+          <div class="small text-secondary">Events</div>
+        </div>
+
+        <div class="col">
+          <span class="stat-number" data-target="2" data-suffix="+">0</span>
+          <div class="small text-secondary">Years</div>
+        </div>
+
+        <div class="col">
+          <span class="stat-number" data-target="8000" data-suffix="+">0</span>
+          <div class="small text-secondary">Coffee Cups</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== OUR INTERIOR SECTION ====== -->
+
+<section class="our-interior py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <!-- LEFT: 4 Images in Grid -->
+
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="images/aboutUsInterior_1.png" alt="Cafe Interior 1" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-6">
+            <img src="images/aboutUsInterior_2.png" alt="Cafe Interior 2" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-6">
+            <img src="images/aboutUsInterior_3.png?v=2" alt="Cafe Interior 3" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-6">
+            <img src="images/aboutUsInterior_4.png" alt="Cafe Interior 4" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Text & Button -->
+
+      <div class="col-lg-6">
+        <p class="text-uppercase gray_color section-eyebrow">Our Interior</p>
+        <h2 class="section-title font-cormorant fw-bold mb-4">
+          Spaces for Anyone <br>and Everyone!
+        </h2>
+        <p class="mb-4" style="max-width: 450px;">
+          Be it cozy couches, private discussion rooms, snug 4-seaters, or peaceful reading nooks — we’ve got them all. Whether you’re here to get lost in a book or enjoy a good chat over coffee and treats, there’s a perfect spot waiting for you.
+        </p>
+        <a href="#" class="btn btn-green btn-lg font-cormorant rounded-pill">View Seating Plan</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Decorative cake doodle -->
+
+  <img src="images/aboutUsDoodle_5.png" alt="Cake Doodle" class="decor-cake">
+
+</section>
+
+
+<!-- ====== TESTIMONIALS ====== -->
+
+<section class="testimonials py-5 beigecolor">
+  <div class="container position-relative">
+
+    <!-- Heading -->
+
+    <div class="row">
+      <div class="col-lg-7">
+        <p class="text-uppercase mb-2 section-eyebrow">Testimonials</p>
+        <h2 class="font-cormorant fw-bold display-5 mb-3 position-relative">
+          What People Are<br>Writing About Us
+          <img src="images/aboutUsDoodle_6.png" alt="Heart doodle" class="heart-doodle">
+        </h2>
+        <p style="max-width:520px;">
+          A glimpse into the stories, photos, and memories shared by our café
+          visitors.
+        </p>
+      </div>
+    </div>
+
+    
+    
+    
+    <!-- Testimonials Section -->
+
+<div class="row g-4 mt-2 testimonials">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card testi-card shadow-sm">
+      <img src="images/aboutUsInsta_1.png" class="w-100 d-block" alt="IG post 1">
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card testi-card shadow-sm">
+      <img src="images/aboutUsInsta_2.png" class="w-100 d-block" alt="IG post 2">
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card testi-card shadow-sm">
+      <img src="images/aboutUsInsta_3.png" class="w-100 d-block" alt="IG post 3">
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+  <!-- FAQ Section -->
+
+  <section id="faq" class="faq-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Column: Illustration -->
+
+        <div class="col-lg-6 text-center">
+          <div class="faq-illustration justify-content-center">
+            <img src="images/aboutUsDoodle_7.png" alt="FAQ Illustration" class="img-fluid">
+          </div>
+        </div>
+
+        <!-- Right Column: FAQ List -->
+
+        <div class="col-lg-6">
+          <div class="faq-content">
+            <h2 class="font-cormorant display-5 fw-bold mb-4">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+              <div class="faq-item active">
+                <div class="faq-question d-flex justify-content-between align-items-center" onclick="toggleFAQ(this)">
+                  <span>Do I need to book a table in advance?</span>
+                  <i class="bi bi-chevron-right faq-arrow" style="transform: rotate(90deg);"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>No, you don't need to book a table in advance. We welcome walk-ins and have plenty of seating available. However, for our special events like Book Club Nights, we recommend arriving early to secure your spot.</p>
+                </div>
+                <hr class="faq-divider">
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question d-flex justify-content-between align-items-center" onclick="toggleFAQ(this)">
+                  <span>How much is the membership fee?</span>
+                  <i class="bi bi-chevron-right faq-arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Our membership fee is $25 per month, which includes access to all our events, 10% discount on all food and beverages, and exclusive early access to new book arrivals and special promotions.</p>
+                </div>
+                <hr class="faq-divider">
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question d-flex justify-content-between align-items-center" onclick="toggleFAQ(this)">
+                  <span>Can I bring my own book to read?</span>
+                  <i class="bi bi-chevron-right faq-arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Absolutely! We encourage you to bring your own books. Our café is designed to be a comfortable reading space, and you're welcome to enjoy your personal reading material along with our coffee and treats.</p>
+                </div>
+                <hr class="faq-divider">
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question d-flex justify-content-between align-items-center" onclick="toggleFAQ(this)">
+                  <span>Can I join events without being a member?</span>
+                  <i class="bi bi-chevron-right faq-arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>Yes, you can participate in most of our events without being a member. However, members get priority booking and special discounts on event fees. Some exclusive events are reserved for members only.</p>
+                </div>
+                <hr class="faq-divider">
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question d-flex justify-content-between align-items-center" onclick="toggleFAQ(this)">
+                  <span>Can I recommend books to the cafe?</span>
+                  <i class="bi bi-chevron-right faq-arrow"></i>
+                </div>
+                <div class="faq-answer">
+                  <p>We love book recommendations! You can suggest books through our website contact form, speak to our staff directly, or leave a note in our suggestion box. We regularly update our collection based on customer recommendations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram strip -->
+
+  <section class="instagram-strip position-relative">
+    <div class="d-flex">
+      <img src="images/pic1.png" class="insta-img" alt="Pic 1" />
+      <img src="images/pic2.png" class="insta-img" alt="Pic 2" />
+      <img src="images/pic3.png" class="insta-img" alt="Pic 3" />
+      <img src="images/pic4.png" class="insta-img" alt="Pic 4" />
+      <img src="images/pic5.png" class="insta-img" alt="Pic 5" />
+      <img src="images/pic6.png" class="insta-img" alt="Pic 6" />
+    </div>
+    <div class="insta-overlay">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <img src="images/insta.png" alt="Instagram" class="insta-icon" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <section class="site-footer text-white py-5 mt-0">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Working Hours -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Working Hours</h6>
+          <ul class="list-unstyled m-0 text-white">
+            <li class="mb-2">Mon–Fri: 9AM – 6PM</li>
+            <li>Sat–Sun: 9AM – 11PM</li>
+          </ul>
+        </div>
+
+        <!-- Office -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Office</h6>
+          <address class="text-white mb-3">
+            50 Nanyang Ave,<br />Singapore 639798
+          </address>
+          <p class="mb-2">
+            <a class="footer-link" href="mailto:latte_literature@gmail.com">
+              latte_literature@gmail.com
+            </a>
+          </p>
+          <p class="mb-0 text-white">+65 12345678</p>
+        </div>
+
+        <!-- Links -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Links</h6>
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a class="footer-link" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="footer-link" href="about.html">About Us</a></li>
+            <li class="mb-2"><a class="footer-link" href="menu.html">Menu</a></li>
+            <li class="mb-2"><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Get in Touch -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-title mb-3">Get in Touch</h6>
+          <div class="social-icons d-flex gap-3">
+            <a class="icon-btn" href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="icon-btn" href="https://x.com/?lang=en" target="_blank" aria-label="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a class="icon-btn" href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a class="icon-btn" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider my-4"></div>
+
+      <!-- Bottom line -->
+      <div class="small text-secondary">
+        Latte&ampLiterature © 2025 All Rights Reserved
+      </div>
+    </div>
+  </section>
+
+  <!-- Count-up script + Bootstrap -->
+  <script>
+    (function () {
+      const DURATION = 3500; // ms
+      const EASE = t => 1 - Math.pow(1 - t, 3); // easeOutCubic
+
+      function animateCounter(el) {
+        if (el.dataset.done === "1") return;
+        el.dataset.done = "1";
+
+        const target = parseInt(el.dataset.target || "0", 10);
+        const suffix = el.dataset.suffix || "";
+        const start = 0;
+        const startTime = performance.now();
+
+        function frame(now) {
+          const elapsed = now - startTime;
+          const p = Math.min(1, elapsed / DURATION);
+          const eased = EASE(p);
+          const value = Math.floor(start + (target - start) * eased);
+          el.textContent = value.toLocaleString();
+          if (p < 1) requestAnimationFrame(frame);
+          else el.textContent = target.toLocaleString() + suffix;
+        }
+        requestAnimationFrame(frame);
+      }
+
+      const numbers = document.querySelectorAll(".stat-number");
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) animateCounter(entry.target);
+        }
+      }, { threshold: 0.2 });
+
+      numbers.forEach(el => observer.observe(el));
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- FAQ Toggle Script -->
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.closest('.faq-item');
+      const answer = faqItem.querySelector('.faq-answer');
+      const arrow = faqItem.querySelector('.faq-arrow');
+      
+      // Toggle the active class
+
+      faqItem.classList.toggle('active');
+      
+      if (faqItem.classList.contains('active')) {
+
+        // Show answer
+
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+        arrow.style.transform = 'rotate(90deg)';
+      } else {
+      
+        // Hide answer
+
+        answer.style.maxHeight = '0';
+        answer.style.opacity = '0';
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+  <script>
+  // Automatically open the first FAQ item when the page loads
+  window.addEventListener('DOMContentLoaded', () => {
+    const firstFAQ = document.querySelector('.faq-item');
+    if (firstFAQ) {
+      firstFAQ.classList.add('active');
+      const answer = firstFAQ.querySelector('.faq-answer');
+      const arrow = firstFAQ.querySelector('.faq-arrow');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      answer.style.opacity = '1';
+      arrow.style.transform = 'rotate(90deg)';
+    }
+  });
+</script>
+
+
+</body>
+</html>
