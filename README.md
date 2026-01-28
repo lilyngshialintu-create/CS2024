@@ -7,4 +7,4 @@ All visual assets in this repository are either AI-generated or sourced from roy
 
 ## Contributors
 - Lily Ng Shia Li
-- Siva
+- Sivaranjani Nellaiappan
